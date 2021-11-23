@@ -155,13 +155,14 @@ var editTask = function(taskId) {
     
     // get task list item element
     var taskSelected = document.querySelector(".task-item[data-task-id='" + taskId + "']");
-    console.log(taskType);
     
     // get content from task name and type
     var taskName = taskSelected.querySelector("h3.task-name").textContent;
     console.log(taskName);
-
+    
     var taskType = taskSelected.querySelector("span.task-type").textContent;
+    console.log(taskType);
+    
     document.querySelector("input[name='task-name']").value = taskName;
     document.querySelector("select[name='task-type']").value = taskType;
     
